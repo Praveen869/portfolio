@@ -1,5 +1,7 @@
 # Modern Portfolio - Praveen Dwivedi
 
+![Portfolio Screenshot](public/screenshot.png)
+
 A premium, high-performance portfolio website built with React, Vite, and Tailwind CSS. Featuring glassmorphism design, real-time contact updates via EmailJS, and a smooth, responsive user interface.
 
 ## 🚀 Features
