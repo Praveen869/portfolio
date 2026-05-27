@@ -30,6 +30,7 @@ export const skillCategories = [
     title: "Frontend",
     skills: [
       { name: "React.js", icon: "logos:react" },
+      { name: "Vue.js", icon: "logos:vue" },
       { name: "JavaScript", icon: "logos:javascript" },
       { name: "HTML", icon: "logos:html-5" },
       { name: "CSS", icon: "logos:css-3" },
@@ -44,7 +45,8 @@ export const skillCategories = [
       { name: "FastAPI", icon: "logos:fastapi-icon" },
       { name: "Flask", icon: "logos:flask" },
       { name: "REST APIs", icon: "logos:postman-icon" },
-      { name: "WebSockets", icon: "logos:websocket" }
+      { name: "WebSockets", icon: "logos:websocket" },
+      { name: "Node.js", icon: "logos:nodejs-icon" }
     ],
     emoji: "⚙️"
   },
@@ -63,19 +65,23 @@ export const skillCategories = [
       { name: "Scikit-Learn", icon: "simple-icons:scikitlearn" },
       { name: "Pandas", icon: "logos:pandas-icon" },
       { name: "NumPy", icon: "logos:numpy" },
-      { name: "Python", icon: "logos:python" }
+      { name: "Python", icon: "logos:python" },
+      { name: "OpenAI API", icon: "simple-icons:openai" }
     ],
     emoji: "🧠"
   },
   {
-    title: "Tools & DevOps",
+    title: "Tools & Platforms",
     skills: [
       { name: "Git", icon: "logos:git-icon" },
       { name: "GitHub", icon: "logos:github-icon" },
       { name: "VS Code", icon: "logos:visual-studio-code" },
       { name: "Postman", icon: "logos:postman-icon" },
       { name: "Vercel", icon: "logos:vercel-icon" },
-      { name: "GitLab", icon: "logos:gitlab" }
+      { name: "GitLab", icon: "logos:gitlab" },
+      { name: "Render", icon: "simple-icons:render" },
+      { name: "Railway", icon: "simple-icons:railway" },
+      { name: "Neon", icon: "simple-icons:neon" }
     ],
     emoji: "🛠️"
   }
@@ -106,7 +112,16 @@ export const projects = [
       "A machine learning-based web app that predicts diabetes risk using optimized clinical data pipelines.",
     tech: ["Python", "Flask", "scikit-learn", "MongoDB", "HTML", "CSS", "JavaScript", "Gmail SMTP"],
     github: "https://github.com/Praveen869/type-2-diabetes-prediction-system.git",
-    live: "",
+    live: "https://type-2-diabetes-prediction-system.onrender.com/",
     image: "/Diabetes.png",
+  },
+  {
+    title: "WorkNest",
+    description:
+      "A lightweight, self-hostable team task management application with role-based access control, JWT authentication, and a progress tracking dashboard.",
+    tech: ["Python", "Flask", "PostgreSQL", "SQLAlchemy", "JWT", "HTML", "CSS", "JavaScript"],
+    github: "https://github.com/Praveen869/WorkNest.git",
+    live: "https://web-production-c0c5a.up.railway.app/",
+    image: "/Worknest.png",
   },
 ];
