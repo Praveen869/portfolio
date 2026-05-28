@@ -21,7 +21,7 @@ export default function Hero() {
               {personalInfo.subRole}
             </p>
           </div>
-          
+
           <h1 className="text-6xl md:text-8xl font-black tracking-tighter">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-gray-500 group-hover:from-indigo-400 group-hover:to-purple-400 transition-all duration-1000">
               {personalInfo.name}
@@ -50,7 +50,7 @@ export default function Hero() {
               <span className="text-sky-400">PostgreSQL</span>.
             </p>
           </div>
-          
+
           <div className="flex flex-wrap justify-center items-center gap-y-6 gap-x-10 py-10 border-y border-white/5 relative">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
             <div className="flex items-center gap-4 group/icon">
@@ -63,11 +63,15 @@ export default function Hero() {
             <div className="flex items-center gap-4 group/icon">
               <img src="https://api.iconify.design/logos:react.svg" className="w-8 h-8 group-hover/icon:scale-125 transition-transform" alt="React" />
               <img src="https://api.iconify.design/logos:tailwindcss-icon.svg" className="w-8 h-8 group-hover/icon:scale-125 transition-transform" alt="Tailwind" />
+              <img src="https://api.iconify.design/logos:javascript.svg" className="w-8 h-8 rounded-md group-hover/icon:scale-125 transition-transform" alt="JavaScript" />
+              <img src="https://api.iconify.design/logos:vitejs.svg" className="w-8 h-8 group-hover/icon:scale-125 transition-transform" alt="Vite" />
             </div>
             <div className="h-6 w-px bg-white/10 hidden md:block" />
             <div className="flex items-center gap-4 group/icon">
-              <img src="https://api.iconify.design/logos:mongodb-icon.svg" className="w-4 h-8 group-hover/icon:scale-125 transition-transform" alt="MongoDB" />
+              <img src="https://api.iconify.design/logos:mongodb-icon.svg" className="w-8 h-8 group-hover/icon:scale-125 transition-transform" alt="MongoDB" />
               <img src="https://api.iconify.design/logos:postgresql.svg" className="w-8 h-8 group-hover/icon:scale-125 transition-transform" alt="PostgreSQL" />
+              <img src="https://api.iconify.design/vscode-icons:file-type-sql.svg" className="w-8 h-8 group-hover/icon:scale-125 transition-transform" alt="SQL" />
+              <img src="https://api.iconify.design/logos:mysql-icon.svg" className="w-8 h-8 group-hover/icon:scale-125 transition-transform" alt="MySQL" />
             </div>
           </div>
 

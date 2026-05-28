@@ -48,24 +48,24 @@ export default function Contact() {
   };
 
   const socialLinks = [
-    { 
-      icon: "logos:google-gmail", 
-      label: "Email", 
-      value: personalInfo.email, 
+    {
+      icon: "logos:google-gmail",
+      label: "Email",
+      value: personalInfo.email,
       href: `mailto:${personalInfo.email}`,
       color: "from-blue-500/20 to-cyan-500/20"
     },
-    { 
-      icon: "logos:linkedin-icon", 
-      label: "LinkedIn", 
-      value: "LinkedIn Profile", 
+    {
+      icon: "logos:linkedin-icon",
+      label: "LinkedIn",
+      value: "LinkedIn Profile",
       href: personalInfo.linkedin,
       color: "from-indigo-500/20 to-blue-500/20"
     },
-    { 
-      icon: "logos:github-icon", 
-      label: "GitHub", 
-      value: personalInfo.github.replace("https://github.com/", ""), 
+    {
+      icon: "logos:github-icon",
+      label: "GitHub",
+      value: personalInfo.github.replace("https://github.com/", ""),
       href: personalInfo.github,
       color: "from-purple-500/20 to-pink-500/20"
     },
@@ -76,7 +76,7 @@ export default function Contact() {
       {/* Background decoration */}
       <div className="mesh-bg" />
       <div className="watermark">CONTACT</div>
-      
+
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-20 reveal">
           <p className="text-indigo-400 text-sm font-black tracking-[0.3em] uppercase mb-4 opacity-80">
@@ -87,7 +87,7 @@ export default function Contact() {
           </h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto rounded-full shadow-[0_0_20px_rgba(99,102,241,0.5)] mb-8" />
           <p className="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
-            Looking for a developer or want to collaborate on something interesting? 
+            Looking for a developer or want to collaborate on something interesting?
             I'm always open to new opportunities and conversations.
           </p>
         </div>
@@ -105,10 +105,10 @@ export default function Contact() {
                 className="group flex items-center gap-6 bg-gray-900/40 backdrop-blur-xl border border-white/5 hover:border-indigo-500/30 rounded-3xl p-6 transition-all duration-500 hover:-translate-y-2 reveal"
               >
                 <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500">
-                  <img 
-                    src={`https://api.iconify.design/${item.icon}.svg`} 
-                    className="w-8 h-8 transition-all duration-300" 
-                    alt={item.label} 
+                  <img
+                    src={`https://api.iconify.design/${item.icon}.svg`}
+                    className="w-8 h-8 transition-all duration-300"
+                    alt={item.label}
                   />
                 </div>
                 <div>
@@ -125,27 +125,27 @@ export default function Contact() {
 
           {/* Form */}
           <div className="lg:col-span-3">
-            <form 
-              onSubmit={handleSubmit} 
+            <form
+              onSubmit={handleSubmit}
               className="bg-gray-900/40 backdrop-blur-xl border border-white/5 p-10 rounded-[2.5rem] shadow-2xl reveal relative overflow-hidden"
               style={{ animationDelay: "450ms" }}
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-500/5 rounded-full blur-3xl" />
-              
+
               <h3 className="text-2xl font-bold text-white mb-8">Send a Message</h3>
-              
+
               {sent && (
                 <div className="bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-sm px-6 py-4 rounded-2xl mb-8 animate-pulse-soft">
                   ✨ Message sent! I'll get back to you soon.
                 </div>
               )}
-              
+
               {error && (
                 <div className="bg-red-500/10 border border-red-500/20 text-red-400 text-sm px-6 py-4 rounded-2xl mb-8">
                   ❌ {error}
                 </div>
               )}
-              
+
               <div className="space-y-6">
                 <div className="group">
                   <input
@@ -158,7 +158,7 @@ export default function Contact() {
                     className="w-full bg-white/5 border border-white/10 focus:border-indigo-500/50 text-white placeholder-gray-500 rounded-2xl px-6 py-4 outline-none transition-all duration-300 focus:bg-white/10"
                   />
                 </div>
-                
+
                 <div className="group">
                   <input
                     type="email"
@@ -170,7 +170,7 @@ export default function Contact() {
                     className="w-full bg-white/5 border border-white/10 focus:border-indigo-500/50 text-white placeholder-gray-500 rounded-2xl px-6 py-4 outline-none transition-all duration-300 focus:bg-white/10"
                   />
                 </div>
-                
+
                 <div className="group">
                   <textarea
                     name="message"
@@ -182,7 +182,7 @@ export default function Contact() {
                     className="w-full bg-white/5 border border-white/10 focus:border-indigo-500/50 text-white placeholder-gray-500 rounded-2xl px-6 py-4 outline-none transition-all duration-300 focus:bg-white/10 resize-none"
                   />
                 </div>
-                
+
                 <button
                   type="submit"
                   disabled={isSending}
@@ -197,4 +197,4 @@ export default function Contact() {
       </div>
     </section>
   );
-}
+}

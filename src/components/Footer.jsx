@@ -13,7 +13,7 @@ export default function Footer() {
             Designed & Developed by {personalInfo.name}
           </div>
         </div>
-        
+
         <div className="flex justify-center items-center gap-6 text-sm font-bold tracking-widest uppercase">
           <a href={personalInfo.github} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-indigo-400 transition-all duration-300">GitHub</a>
           <span className="text-gray-800 font-normal">|</span>

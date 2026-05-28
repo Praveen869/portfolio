@@ -7,7 +7,7 @@ export default function About() {
       <div className="mesh-bg" />
       <div className="watermark">ABOUT</div>
       <div className="absolute top-0 left-0 w-80 h-80 bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none -z-0" />
-      
+
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center relative z-10">
         {/* Left Column - Image/Avatar */}
         <div className="flex justify-center md:justify-end">
@@ -65,7 +65,7 @@ export default function About() {
           {/* Education Info - Even more compact */}
           <div className="flex-1 p-6 rounded-2xl bg-white/[0.03] backdrop-blur-xl border border-white/10 space-y-3 shadow-2xl relative overflow-hidden group max-w-xl">
             <div className="absolute top-0 right-0 w-20 h-20 bg-indigo-500/10 rounded-full blur-3xl -mr-10 -mt-10 group-hover:bg-indigo-500/20 transition-colors" />
-            
+
             <div className="flex flex-wrap items-center justify-between gap-4">
               <div className="space-y-1">
                 <p className="text-indigo-400 text-xs font-black uppercase tracking-[0.3em]">Education Background</p>
@@ -79,7 +79,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-            
+
             <p className="text-gray-400 text-base font-medium flex items-center gap-3">
               <span className="w-4 h-px bg-indigo-500/30"></span>
               {personalInfo.education[0].school}
