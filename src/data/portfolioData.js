@@ -32,9 +32,11 @@ export const skillCategories = [
       { name: "React.js", icon: "logos:react" },
       { name: "Vue.js", icon: "logos:vue" },
       { name: "JavaScript", icon: "logos:javascript" },
-      { name: "HTML", icon: "logos:html-5" },
-      { name: "CSS", icon: "logos:css-3" },
-      { name: "Tailwind", icon: "logos:tailwindcss-icon" }
+      { name: "HTML5", icon: "logos:html-5" },
+      { name: "CSS3", icon: "logos:css-3" },
+      { name: "Tailwind CSS", icon: "logos:tailwindcss-icon" },
+      { name: "Framer Motion", icon: "logos:framer" },
+      { name: "Vite", icon: "logos:vitejs" }
     ],
     emoji: "🌐"
   },
@@ -46,7 +48,11 @@ export const skillCategories = [
       { name: "Flask", icon: "logos:flask" },
       { name: "REST APIs", icon: "logos:postman-icon" },
       { name: "WebSockets", icon: "logos:websocket" },
-      { name: "Node.js", icon: "logos:nodejs-icon" }
+      { name: "Node.js", icon: "logos:nodejs-icon" },
+      { name: "C", icon: "logos:c" },
+      { name: "JWT Auth", icon: "logos:jwt-icon" },
+      { name: "Gunicorn", icon: "simple-icons:gunicorn" },
+      { name: "Gmail SMTP", icon: "logos:google-gmail" }
     ],
     emoji: "⚙️"
   },
@@ -55,7 +61,9 @@ export const skillCategories = [
     skills: [
       { name: "MongoDB", icon: "logos:mongodb-icon" },
       { name: "PostgreSQL", icon: "logos:postgresql" },
-      { name: "SQLite", icon: "logos:sqlite" }
+      { name: "SQLite", icon: "logos:sqlite" },
+      { name: "SQL", icon: "tabler:database" },
+      { name: "SQLAlchemy", icon: "simple-icons:sqlalchemy" }
     ],
     emoji: "🗄️"
   },
@@ -66,7 +74,8 @@ export const skillCategories = [
       { name: "Pandas", icon: "logos:pandas-icon" },
       { name: "NumPy", icon: "logos:numpy" },
       { name: "Python", icon: "logos:python" },
-      { name: "OpenAI API", icon: "simple-icons:openai" }
+      { name: "OpenAI API", icon: "simple-icons:openai" },
+      { name: "OpenRouter API", icon: "simple-icons:openrouter" }
     ],
     emoji: "🧠"
   },
@@ -78,10 +87,11 @@ export const skillCategories = [
       { name: "VS Code", icon: "logos:visual-studio-code" },
       { name: "Postman", icon: "logos:postman-icon" },
       { name: "Vercel", icon: "logos:vercel-icon" },
-      { name: "GitLab", icon: "logos:gitlab" },
+      { name: "GitLab CI/CD", icon: "logos:gitlab" },
       { name: "Render", icon: "simple-icons:render" },
       { name: "Railway", icon: "simple-icons:railway" },
-      { name: "Neon", icon: "simple-icons:neon" }
+      { name: "Neon", icon: "simple-icons:neon" },
+      { name: "Jupyter Notebook", icon: "logos:jupyter" }
     ],
     emoji: "🛠️"
   }
