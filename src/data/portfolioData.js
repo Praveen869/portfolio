@@ -16,7 +16,8 @@ export const personalInfo = {
     {
       degree: "B.Tech in Computer Science and Engineering",
       school: "Dr. A.P.J. Abdul Kalam Technical University, Lucknow",
-      year: "2022 – 2026"
+      year: "2022 – 2026",
+      cgpa: "8.26"
     },
   ],
   email: "praveenkrdwivedi.3249@gmail.com",

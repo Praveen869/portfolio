@@ -84,6 +84,12 @@ export default function About() {
               <span className="w-4 h-px bg-indigo-500/30"></span>
               {personalInfo.education[0].school}
             </p>
+            {personalInfo.education[0].cgpa && (
+              <p className="text-indigo-300/90 text-sm font-semibold flex items-center gap-3">
+                <span className="w-4 h-px bg-indigo-500/30"></span>
+                CGPA: <span className="text-indigo-100">{personalInfo.education[0].cgpa}</span>
+              </p>
+            )}
           </div>
 
           {/* Action Button */}
