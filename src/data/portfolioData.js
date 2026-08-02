@@ -92,7 +92,9 @@ export const skillCategories = [
       { name: "Render", icon: "simple-icons:render" },
       { name: "Railway", icon: "simple-icons:railway" },
       { name: "Neon", icon: "simple-icons:neon" },
-      { name: "Jupyter Notebook", icon: "logos:jupyter" }
+      { name: "Jupyter Notebook", icon: "logos:jupyter" },
+      { name: "Axios", icon: "simple-icons:axios" },
+      { name: "Serper.dev API", icon: "tabler:api" }
     ],
     emoji: "🛠️"
   }
