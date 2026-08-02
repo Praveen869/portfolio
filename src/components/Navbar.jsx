@@ -15,13 +15,12 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-gray-950/90 backdrop-blur-md shadow-lg" : "bg-transparent"
-        }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 bg-gradient-to-r from-rose-50/90 via-pink-50/90 to-rose-100/90 backdrop-blur-md border-b border-rose-200 ${scrolled ? "shadow-md" : "shadow-sm"}`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#hero" className="text-2xl font-bold text-white tracking-tight">
+        <a href="#hero" className="text-2xl font-bold text-gray-900 tracking-tight">
           {personalInfo.name.split(" ")[0]}
-          <span className="text-indigo-400">.</span>
+          <span className="text-indigo-600">.</span>
         </a>
 
         {/* Desktop Links */}
@@ -30,7 +29,7 @@ export default function Navbar() {
             <li key={link}>
               <a
                 href={`#${link.toLowerCase()}`}
-                className="text-gray-300 hover:text-indigo-400 transition-colors duration-200 text-sm font-medium"
+                className="text-gray-700 hover:text-indigo-600 transition-colors duration-200 text-sm font-medium"
               >
                 {link}
               </a>
@@ -49,24 +48,24 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-white focus:outline-none"
+          className="md:hidden text-gray-900 focus:outline-none"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          <div className={`w-6 h-0.5 bg-white mb-1.5 transition-all ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
-          <div className={`w-6 h-0.5 bg-white mb-1.5 transition-all ${menuOpen ? "opacity-0" : ""}`} />
-          <div className={`w-6 h-0.5 bg-white transition-all ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+          <div className={`w-6 h-0.5 bg-gray-900 mb-1.5 transition-all ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
+          <div className={`w-6 h-0.5 bg-gray-900 mb-1.5 transition-all ${menuOpen ? "opacity-0" : ""}`} />
+          <div className={`w-6 h-0.5 bg-gray-900 transition-all ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
         </button>
       </div>
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-gray-950/95 backdrop-blur-md px-6 pb-6">
+        <div className="md:hidden bg-gradient-to-r from-rose-50/95 via-pink-50/95 to-rose-100/95 backdrop-blur-md px-6 pb-6 border-b border-rose-200 shadow-sm">
           {links.map((link) => (
             <a
               key={link}
               href={`#${link.toLowerCase()}`}
               onClick={() => setMenuOpen(false)}
-              className="block py-3 text-gray-300 hover:text-indigo-400 transition-colors border-b border-gray-800 text-sm font-medium"
+              className="block py-3 text-gray-700 hover:text-indigo-600 transition-colors border-b border-gray-100 text-sm font-medium"
             >
               {link}
             </a>
@@ -75,7 +74,7 @@ export default function Navbar() {
             href="/resume.pdf"
             target="_blank"
             onClick={() => setMenuOpen(false)}
-            className="block py-4 text-indigo-400 font-bold text-sm tracking-widest uppercase hover:text-white transition-colors"
+            className="block py-4 text-indigo-600 font-bold text-sm tracking-widest uppercase hover:text-indigo-800 transition-colors"
           >
             View Resume
           </a>

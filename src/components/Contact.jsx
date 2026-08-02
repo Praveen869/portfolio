@@ -72,21 +72,21 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="bg-gray-950 py-24 px-6 relative overflow-hidden">
+    <section id="contact" className="bg-creamy-pattern py-24 px-6 relative overflow-hidden">
       {/* Background decoration */}
       <div className="mesh-bg" />
       <div className="watermark">CONTACT</div>
 
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-20 reveal">
-          <p className="text-indigo-400 text-sm font-black tracking-[0.3em] uppercase mb-4 opacity-80">
+          <p className="text-indigo-600 text-sm font-black tracking-[0.3em] uppercase mb-4 opacity-80">
             GET IN TOUCH
           </p>
           <h2 className="text-5xl md:text-7xl font-bold mb-8 text-gradient">
             Contact Me
           </h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto rounded-full shadow-[0_0_20px_rgba(99,102,241,0.5)] mb-8" />
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-gray-700 text-lg max-w-2xl mx-auto leading-relaxed">
             Looking for a developer or want to collaborate on something interesting?
             I'm always open to new opportunities and conversations.
           </p>
@@ -102,7 +102,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noreferrer"
                 style={{ animationDelay: `${index * 150}ms` }}
-                className="group flex items-center gap-6 bg-gray-900/40 backdrop-blur-xl border border-white/5 hover:border-indigo-500/30 rounded-3xl p-6 transition-all duration-500 hover:-translate-y-2 reveal"
+                className="group flex items-center gap-6 bg-white border border-gray-200 hover:border-indigo-300 shadow-sm hover:shadow-md rounded-3xl p-6 transition-all duration-500 hover:-translate-y-2 reveal"
               >
                 <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500">
                   <img
@@ -112,10 +112,10 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <div className="text-indigo-400 text-xs font-black tracking-widest uppercase mb-1 opacity-60">
+                  <div className="text-indigo-600 text-xs font-black tracking-widest uppercase mb-1 opacity-80">
                     {item.label}
                   </div>
-                  <div className="text-white text-lg font-bold group-hover:text-indigo-400 transition-colors truncate max-w-[200px] md:max-w-full">
+                  <div className="text-gray-900 text-lg font-bold group-hover:text-indigo-600 transition-colors truncate max-w-[200px] md:max-w-full">
                     {item.value}
                   </div>
                 </div>
@@ -127,12 +127,12 @@ export default function Contact() {
           <div className="lg:col-span-3">
             <form
               onSubmit={handleSubmit}
-              className="bg-gray-900/40 backdrop-blur-xl border border-white/5 p-10 rounded-[2.5rem] shadow-2xl reveal relative overflow-hidden"
+              className="bg-white border border-gray-200 p-10 rounded-[2.5rem] shadow-xl reveal relative overflow-hidden"
               style={{ animationDelay: "450ms" }}
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-500/5 rounded-full blur-3xl" />
 
-              <h3 className="text-2xl font-bold text-white mb-8">Send a Message</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-8">Send a Message</h3>
 
               {sent && (
                 <div className="bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-sm px-6 py-4 rounded-2xl mb-8 animate-pulse-soft">
@@ -141,7 +141,7 @@ export default function Contact() {
               )}
 
               {error && (
-                <div className="bg-red-500/10 border border-red-500/20 text-red-400 text-sm px-6 py-4 rounded-2xl mb-8">
+                <div className="bg-red-50 border border-red-200 text-red-600 text-sm px-6 py-4 rounded-2xl mb-8">
                   ❌ {error}
                 </div>
               )}
@@ -155,7 +155,7 @@ export default function Contact() {
                     value={form.name}
                     onChange={handleChange}
                     required
-                    className="w-full bg-white/5 border border-white/10 focus:border-indigo-500/50 text-white placeholder-gray-500 rounded-2xl px-6 py-4 outline-none transition-all duration-300 focus:bg-white/10"
+                    className="w-full bg-gray-50 border border-gray-200 focus:border-indigo-400 text-gray-900 placeholder-gray-400 rounded-2xl px-6 py-4 outline-none transition-all duration-300 focus:bg-white"
                   />
                 </div>
 
@@ -167,7 +167,7 @@ export default function Contact() {
                     value={form.email}
                     onChange={handleChange}
                     required
-                    className="w-full bg-white/5 border border-white/10 focus:border-indigo-500/50 text-white placeholder-gray-500 rounded-2xl px-6 py-4 outline-none transition-all duration-300 focus:bg-white/10"
+                    className="w-full bg-gray-50 border border-gray-200 focus:border-indigo-400 text-gray-900 placeholder-gray-400 rounded-2xl px-6 py-4 outline-none transition-all duration-300 focus:bg-white"
                   />
                 </div>
 
@@ -179,7 +179,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="w-full bg-white/5 border border-white/10 focus:border-indigo-500/50 text-white placeholder-gray-500 rounded-2xl px-6 py-4 outline-none transition-all duration-300 focus:bg-white/10 resize-none"
+                    className="w-full bg-gray-50 border border-gray-200 focus:border-indigo-400 text-gray-900 placeholder-gray-400 rounded-2xl px-6 py-4 outline-none transition-all duration-300 focus:bg-white resize-none"
                   />
                 </div>
 

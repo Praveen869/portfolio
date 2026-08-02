@@ -49,8 +49,8 @@ export const skillCategories = [
       { name: "Flask", icon: "logos:flask" },
       { name: "REST APIs", icon: "logos:postman-icon" },
       { name: "WebSockets", icon: "logos:websocket" },
-      { name: "Node.js", icon: "logos:nodejs-icon" },
       { name: "C", icon: "logos:c" },
+      { name: "Node.js", icon: "logos:nodejs-icon" },
       { name: "JWT Auth", icon: "logos:jwt-icon" },
       { name: "Gunicorn", icon: "simple-icons:gunicorn" },
       { name: "Gmail SMTP", icon: "logos:google-gmail" }
@@ -64,7 +64,9 @@ export const skillCategories = [
       { name: "PostgreSQL", icon: "logos:postgresql" },
       { name: "SQLite", icon: "logos:sqlite" },
       { name: "SQL", icon: "tabler:database" },
-      { name: "SQLAlchemy", icon: "simple-icons:sqlalchemy" }
+      { name: "SQLAlchemy", icon: "simple-icons:sqlalchemy" },
+      { name: "Redis", icon: "logos:redis" },
+      { name: "Supabase", icon: "logos:supabase-icon" }
     ],
     emoji: "🗄️"
   },
@@ -88,13 +90,13 @@ export const skillCategories = [
       { name: "VS Code", icon: "logos:visual-studio-code" },
       { name: "Postman", icon: "logos:postman-icon" },
       { name: "Vercel", icon: "logos:vercel-icon" },
+      { name: "Axios", icon: "simple-icons:axios" },
       { name: "GitLab CI/CD", icon: "logos:gitlab" },
       { name: "Render", icon: "simple-icons:render" },
       { name: "Railway", icon: "simple-icons:railway" },
       { name: "Neon", icon: "simple-icons:neon" },
-      { name: "Jupyter Notebook", icon: "logos:jupyter" },
-      { name: "Axios", icon: "simple-icons:axios" },
-      { name: "Serper.dev API", icon: "tabler:api" }
+      { name: "Serper.dev API", icon: "tabler:api" },
+      { name: "Jupyter Notebook", icon: "logos:jupyter" }
     ],
     emoji: "🛠️"
   }

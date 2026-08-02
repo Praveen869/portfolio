@@ -2,7 +2,7 @@ import { personalInfo } from "../data/portfolioData";
 
 export default function About() {
   return (
-    <section id="about" className="bg-gray-950 py-24 px-6 relative overflow-hidden border-y border-gray-900">
+    <section id="about" className="bg-creamy-pattern py-24 px-6 relative overflow-hidden border-y border-gray-200">
       {/* Background decoration */}
       <div className="mesh-bg" />
       <div className="watermark">ABOUT</div>
@@ -12,7 +12,7 @@ export default function About() {
         {/* Left Column - Image/Avatar */}
         <div className="flex justify-center md:justify-end">
           <div className="relative w-72 h-72 md:w-[500px] md:h-[500px] group">
-            <div className="w-full h-full rounded-2xl bg-gray-900 border border-gray-800 overflow-hidden shadow-2xl transition-all duration-300 group-hover:border-indigo-500/50">
+            <div className="w-full h-full rounded-2xl bg-white border border-gray-200 overflow-hidden shadow-2xl transition-all duration-300 group-hover:border-indigo-500/50">
               <img
                 src="/profile.png"
                 alt="Profile"
@@ -27,30 +27,30 @@ export default function About() {
         {/* Right Column - Text Content */}
         <div className="space-y-10">
           <div>
-            <p className="text-indigo-400 text-sm font-black tracking-[0.3em] uppercase mb-4 opacity-80">
+            <p className="text-indigo-600 text-sm font-black tracking-[0.3em] uppercase mb-4 opacity-80">
               About Me
             </p>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">
               Engineering solutions with precision and purpose
             </h2>
-            <p className="text-gray-400 text-lg leading-relaxed">
+            <p className="text-gray-700 text-lg leading-relaxed">
               {personalInfo.about}
             </p>
           </div>
 
           {/* Highlights Section */}
           <div className="space-y-6">
-            <h3 className="text-xl font-semibold text-white flex items-center gap-3">
+            <h3 className="text-xl font-semibold text-gray-900 flex items-center gap-3">
               <span className="w-8 h-px bg-indigo-500/50"></span>
               What I Do
             </h3>
             <ul className="grid grid-cols-1 gap-4">
               {personalInfo.highlights.map((item, index) => (
-                <li key={index} className="flex items-start gap-4 group p-4 rounded-2xl hover:bg-white/5 transition-colors border border-transparent hover:border-white/5">
-                  <span className="flex-shrink-0 w-6 h-6 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-500 text-sm group-hover:scale-110 transition-transform">
+                <li key={index} className="flex items-start gap-4 group p-4 rounded-2xl hover:bg-gray-50 transition-colors border border-transparent hover:border-gray-200">
+                  <span className="flex-shrink-0 w-6 h-6 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-600 text-sm group-hover:scale-110 transition-transform">
                     ✔
                   </span>
-                  <span className="text-gray-300 text-base">{item}</span>
+                  <span className="text-gray-800 text-base">{item}</span>
                 </li>
               ))}
             </ul>
@@ -63,31 +63,31 @@ export default function About() {
       <div className="max-w-7xl mx-auto mt-20 relative z-10">
         <div className="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-8 p-1 sm:p-2">
           {/* Education Info - Even more compact */}
-          <div className="flex-1 p-6 rounded-2xl bg-white/[0.03] backdrop-blur-xl border border-white/10 space-y-3 shadow-2xl relative overflow-hidden group max-w-xl">
+          <div className="flex-1 p-6 rounded-2xl bg-white/60 backdrop-blur-xl border border-gray-200 space-y-3 shadow-xl relative overflow-hidden group max-w-xl">
             <div className="absolute top-0 right-0 w-20 h-20 bg-indigo-500/10 rounded-full blur-3xl -mr-10 -mt-10 group-hover:bg-indigo-500/20 transition-colors" />
 
             <div className="flex flex-wrap items-center justify-between gap-4">
               <div className="space-y-1">
-                <p className="text-indigo-400 text-xs font-black uppercase tracking-[0.3em]">Education Background</p>
-                <h3 className="text-white font-black text-xl md:text-2xl tracking-tight leading-none group-hover:text-indigo-300 transition-colors">
+                <p className="text-indigo-600 text-xs font-black uppercase tracking-[0.3em]">Education Background</p>
+                <h3 className="text-gray-900 font-black text-xl md:text-2xl tracking-tight leading-none group-hover:text-indigo-600 transition-colors">
                   {personalInfo.education[0].degree}
                 </h3>
               </div>
               <div className="text-right">
-                <div className="inline-block text-indigo-100 text-[10px] font-bold bg-indigo-500/20 px-3 py-1 rounded-full border border-indigo-500/30 backdrop-blur-md">
+                <div className="inline-block text-indigo-900 text-[10px] font-bold bg-indigo-100/50 px-3 py-1 rounded-full border border-indigo-200 backdrop-blur-md">
                   {personalInfo.education[0].year}
                 </div>
               </div>
             </div>
 
-            <p className="text-gray-400 text-base font-medium flex items-center gap-3">
+            <p className="text-gray-700 text-base font-medium flex items-center gap-3">
               <span className="w-4 h-px bg-indigo-500/30"></span>
               {personalInfo.education[0].school}
             </p>
             {personalInfo.education[0].cgpa && (
-              <p className="text-indigo-300/90 text-sm font-semibold flex items-center gap-3">
+              <p className="text-indigo-700 text-sm font-semibold flex items-center gap-3">
                 <span className="w-4 h-px bg-indigo-500/30"></span>
-                CGPA: <span className="text-indigo-100">{personalInfo.education[0].cgpa}</span>
+                CGPA: <span className="text-indigo-900">{personalInfo.education[0].cgpa}</span>
               </p>
             )}
           </div>

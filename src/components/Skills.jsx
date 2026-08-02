@@ -2,7 +2,7 @@ import { skillCategories } from "../data/portfolioData";
 
 export default function Skills() {
   return (
-    <section id="skills" className="bg-gray-950 py-24 px-6 relative overflow-hidden">
+    <section id="skills" className="bg-creamy-pattern py-24 px-6 relative overflow-hidden">
       {/* Background decoration */}
       <div className="mesh-bg" />
       <div className="watermark">SKILLS</div>
@@ -10,7 +10,7 @@ export default function Skills() {
 
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-24 reveal">
-          <p className="text-indigo-400 text-sm font-black tracking-[0.3em] uppercase mb-4 opacity-80">
+          <p className="text-indigo-600 text-sm font-black tracking-[0.3em] uppercase mb-4 opacity-80">
             TECHNICAL ARSENAL
           </p>
           <h2 className="text-5xl md:text-7xl font-bold mb-8 text-gradient">
@@ -24,22 +24,25 @@ export default function Skills() {
             <div
               key={category.title}
               style={{ animationDelay: `${index * 100}ms` }}
-              className="bg-gray-900/40 backdrop-blur-xl border border-white/5 hover:border-indigo-500/30 transition-all duration-700 p-8 rounded-3xl group hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(99,102,241,0.15)] flex flex-col h-full reveal"
+              className="relative bg-white border border-gray-200 hover:border-indigo-300 transition-all duration-700 p-8 rounded-[2.5rem] group hover:-translate-y-3 hover:shadow-2xl flex flex-col h-full reveal overflow-hidden"
             >
-              <div className="flex items-center gap-5 mb-10">
-                <div className="w-16 h-16 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 rounded-2xl flex items-center justify-center text-4xl group-hover:scale-110 transition-transform duration-500 border border-white/5">
+              {/* Decorative gradient orb */}
+              <div className="absolute -top-20 -right-20 w-40 h-40 bg-gradient-to-br from-indigo-400/10 to-purple-400/10 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700 pointer-events-none" />
+
+              <div className="relative z-10 flex items-center gap-5 mb-10">
+                <div className="w-16 h-16 bg-gradient-to-br from-white to-indigo-50/50 rounded-2xl flex items-center justify-center text-4xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 border border-gray-100 shadow-sm relative z-10">
                   {category.emoji}
                 </div>
-                <h3 className="text-2xl font-bold text-white group-hover:text-indigo-400 transition-colors duration-300">
+                <h3 className="text-2xl font-bold text-gray-900 group-hover:text-indigo-600 transition-colors duration-300">
                   {category.title}
                 </h3>
               </div>
 
-              <div className="flex flex-wrap gap-3">
+              <div className="relative z-10 flex flex-wrap gap-3">
                 {category.skills.map((skill) => (
                   <div
                     key={skill.name}
-                    className="flex items-center gap-3 bg-white/5 backdrop-blur-md text-white text-sm font-medium py-2 px-4 rounded-xl border border-white/5 hover:border-indigo-500/50 hover:bg-indigo-500/10 transition-all duration-300 cursor-default group/tag"
+                    className="flex items-center gap-3 bg-gray-50 text-gray-900 text-sm font-bold py-2.5 px-5 rounded-2xl border border-gray-200 hover:border-indigo-300 hover:bg-indigo-50 hover:shadow-md transition-all duration-300 cursor-default group/tag"
                   >
                     <div className="w-7 h-7 flex items-center justify-center bg-white rounded-lg p-1 shadow-sm flex-shrink-0 transition-transform group-hover/tag:scale-110">
                       <img

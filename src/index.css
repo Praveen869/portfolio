@@ -9,11 +9,11 @@
   --primary: #6366f1;
   --primary-hover: #4f46e5;
   --secondary: #a855f7;
-  --bg-dark: #030014;
-  --card-bg: rgba(255, 255, 255, 0.03);
-  --card-border: rgba(255, 255, 255, 0.08);
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
+  --bg-dark: #FDFBF7;
+  --card-bg: rgba(255, 255, 255, 0.7);
+  --card-border: rgba(0, 0, 0, 0.05);
+  --text-main: #111827;
+  --text-muted: #4b5563;
   --font-main: 'Inter', sans-serif;
   --font-heading: 'Outfit', sans-serif;
 }
@@ -31,6 +31,16 @@ body {
   font-family: var(--font-main);
   overflow-x: hidden;
   line-height: 1.6;
+}
+
+/* Background Pattern Overlay */
+.bg-creamy-pattern {
+  background-color: #FDFBF7;
+  background-image: repeating-linear-gradient(45deg,
+      rgba(99, 102, 241, 0.04) 0,
+      rgba(99, 102, 241, 0.04) 1px,
+      transparent 1px,
+      transparent 16px);
 }
 
 h1,
@@ -55,10 +65,10 @@ h6 {
 }
 
 .glass-hover:hover {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(99, 102, 241, 0.4);
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(99, 102, 241, 0.3);
   transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
 /* Scrollbar Customization */
@@ -67,16 +77,16 @@ h6 {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--bg-dark);
+  background: #FDFBF7;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1e1b4b;
+  background: #cbd5e1;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #312e81;
+  background: #94a3b8;
 }
 
 /* Animations */
@@ -134,7 +144,7 @@ h6 {
 
 /* Text Gradient */
 .text-gradient {
-  background: linear-gradient(135deg, #fff 0%, #a855f7 50%, #6366f1 100%);
+  background: linear-gradient(135deg, #1e293b 0%, #4f46e5 50%, #7e22ce 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -148,7 +158,7 @@ h6 {
   transform: translateX(-50%);
   font-size: 15vw;
   font-weight: 900;
-  color: rgba(255, 255, 255, 0.03);
+  color: rgba(0, 0, 0, 0.03);
   z-index: 0;
   pointer-events: none;
   text-transform: uppercase;
@@ -162,8 +172,8 @@ h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 20% 30%, rgba(99, 102, 241, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(168, 85, 247, 0.05) 0%, transparent 50%);
+  background: radial-gradient(circle at 20% 30%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(168, 85, 247, 0.1) 0%, transparent 50%);
   filter: blur(80px);
   z-index: 0;
 }

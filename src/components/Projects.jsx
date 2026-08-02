@@ -2,14 +2,14 @@ import { projects } from "../data/portfolioData";
 
 export default function Projects() {
   return (
-    <section id="projects" className="bg-gray-950 py-24 px-6 relative overflow-hidden">
+    <section id="projects" className="bg-creamy-pattern py-24 px-6 relative overflow-hidden">
       {/* Background decoration */}
       <div className="mesh-bg" />
       <div className="watermark">PROJECTS</div>
 
       <div className="max-w-[1240px] mx-auto relative z-10">
         <div className="text-center mb-32 reveal">
-          <p className="text-indigo-400 text-sm font-black tracking-[0.3em] uppercase mb-4 opacity-80">
+          <p className="text-indigo-600 text-sm font-black tracking-[0.3em] uppercase mb-4 opacity-80">
             MY WORK
           </p>
           <h2 className="text-5xl md:text-7xl font-bold mb-8 text-gradient">
@@ -23,25 +23,25 @@ export default function Projects() {
             <div
               key={project.title}
               style={{ animationDelay: `${index * 150}ms` }}
-              className="group bg-gray-900/40 backdrop-blur-xl border border-white/5 p-8 rounded-3xl hover:border-indigo-500/30 transition-all duration-700 hover:-translate-y-3 flex flex-col h-full reveal hover:shadow-[0_20px_50px_rgba(99,102,241,0.15)]"
+              className="group bg-white border border-gray-200 p-8 rounded-3xl hover:border-indigo-300 transition-all duration-700 hover:-translate-y-3 flex flex-col h-full reveal hover:shadow-2xl"
             >
               {/* Project Image */}
-              <div className="relative w-full h-52 mb-8 overflow-hidden rounded-2xl border border-white/5 group-hover:border-indigo-500/30 transition-all duration-500">
+              <div className="relative w-full h-52 mb-8 overflow-hidden rounded-2xl border border-gray-100 group-hover:border-indigo-300 transition-all duration-500">
                 <img
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4">
                   <span className="text-white text-xs font-bold tracking-widest uppercase">Project Preview</span>
                 </div>
               </div>
 
-              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-indigo-400 transition-colors duration-300">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-indigo-600 transition-colors duration-300">
                 {project.title}
               </h3>
 
-              <p className="text-gray-400 text-base leading-relaxed mb-8 flex-1 opacity-80 group-hover:opacity-100 transition-opacity">
+              <p className="text-gray-700 text-base leading-relaxed mb-8 flex-1 opacity-90 group-hover:opacity-100 transition-opacity">
                 {project.description}
               </p>
 
@@ -49,7 +49,7 @@ export default function Projects() {
                 {project.tech.map((t) => (
                   <span
                     key={t}
-                    className="bg-white/5 backdrop-blur-md text-gray-300 text-xs font-semibold px-3 py-1.5 rounded-lg border border-white/5 group-hover:border-indigo-500/30 transition-all duration-300"
+                    className="bg-indigo-50 text-gray-800 text-xs font-semibold px-3 py-1.5 rounded-lg border border-indigo-100 group-hover:border-indigo-300 transition-all duration-300"
                   >
                     {t}
                   </span>
@@ -61,9 +61,9 @@ export default function Projects() {
                   href={project.github}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex-1 inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 text-white text-sm font-bold py-3 rounded-xl border border-white/10 transition-all duration-300"
+                  className="flex-1 inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-gray-900 text-sm font-bold py-3 rounded-xl border border-gray-300 transition-all duration-300 shadow-sm"
                 >
-                  <img src="https://api.iconify.design/logos:github-icon.svg" className="w-4 h-4 filter invert" alt="Github" />
+                  <img src="https://api.iconify.design/logos:github-icon.svg" className="w-4 h-4" alt="Github" />
                   Code
                 </a>
 
