@@ -100,6 +100,15 @@ export const skillCategories = [
 
 export const projects = [
   {
+    title: "AI Company Research Assistant",
+    description:
+      "A full-stack web application that automates company research by extracting key insights, pain points, competitor analysis, and accurate regional contact details using AI and real-time search APIs.",
+    tech: ["React.js", "Tailwind CSS", "Python", "FastAPI", "OpenRouter (LLM)", "Serper.dev API", "Axios"],
+    github: "https://github.com/Praveen869/ai_company_research",
+    live: "https://ai-company-research-beta.vercel.app/",
+    image: "/Ai_Company_Research.png",
+  },
+  {
     title: "ConvoMind AI",
     description:
       "An intelligent AI chatbot platform with customizable personas and dynamic conversation control using secure API integration.",
