@@ -15,7 +15,11 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 bg-gradient-to-r from-rose-50/90 via-pink-50/90 to-rose-100/90 backdrop-blur-md border-b border-rose-200 ${scrolled ? "shadow-md" : "shadow-sm"}`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-white/50 backdrop-blur-md border-b border-rose-100/40 shadow-sm"
+          : "bg-transparent border-b border-transparent shadow-none"
+      }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#hero" className="text-2xl font-bold text-gray-900 tracking-tight">
@@ -59,7 +63,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-gradient-to-r from-rose-50/95 via-pink-50/95 to-rose-100/95 backdrop-blur-md px-6 pb-6 border-b border-rose-200 shadow-sm">
+        <div className="md:hidden bg-white/75 backdrop-blur-md px-6 pb-6 border-b border-rose-100/40 shadow-sm">
           {links.map((link) => (
             <a
               key={link}

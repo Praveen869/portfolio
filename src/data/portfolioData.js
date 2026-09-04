@@ -104,24 +104,6 @@ export const skillCategories = [
 
 export const projects = [
   {
-    title: "AI Company Research Assistant",
-    description:
-      "A full-stack web application that automates company research by extracting key insights, pain points, competitor analysis, and accurate regional contact details using AI and real-time search APIs.",
-    tech: ["React.js", "Tailwind CSS", "Python", "FastAPI", "OpenRouter (LLM)", "Serper.dev API", "Axios"],
-    github: "https://github.com/Praveen869/ai_company_research",
-    live: "https://ai-company-research-beta.vercel.app/",
-    image: "/Ai_Company_Research.png",
-  },
-  {
-    title: "ConvoMind AI",
-    description:
-      "An intelligent AI chatbot platform with customizable personas and dynamic conversation control using secure API integration.",
-    tech: ["Python", "Django", "JavaScript", "HTML", "CSS", "OpenRouter API", "PostgreSQL", "Render"],
-    github: "https://github.com/Praveen869/convoMind.git",
-    live: "https://convomind.onrender.com/",
-    image: "/Convo.png",
-  },
-  {
     title: "Real-Time Chat Application",
     description:
       "A scalable real-time chat app with multi-room WebSocket architecture, live user tracking, and dark-mode UI.",
@@ -147,5 +129,23 @@ export const projects = [
     github: "https://github.com/Praveen869/WorkNest.git",
     live: "https://web-production-c0c5a.up.railway.app/",
     image: "/Worknest.png",
+  },
+  {
+    title: "AI Company Research Assistant",
+    description:
+      "A full-stack web application that automates company research by extracting key insights, pain points, competitor analysis, and accurate regional contact details using AI and real-time search APIs.",
+    tech: ["React.js", "Tailwind CSS", "Python", "FastAPI", "OpenRouter (LLM)", "Serper.dev API", "Axios"],
+    github: "https://github.com/Praveen869/ai_company_research",
+    live: "https://ai-company-research-beta.vercel.app/",
+    image: "/Ai_Company_Research.png",
+  },
+  {
+    title: "ConvoMind AI",
+    description:
+      "An intelligent AI chatbot platform with customizable personas and dynamic conversation control using secure API integration.",
+    tech: ["Python", "Django", "JavaScript", "HTML", "CSS", "OpenRouter API", "PostgreSQL", "Render"],
+    github: "https://github.com/Praveen869/convoMind.git",
+    live: "https://convomind.onrender.com/",
+    image: "/Convo.png",
   },
 ];
