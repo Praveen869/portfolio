@@ -116,7 +116,7 @@ export const projects = [
     title: "Diabetes Prediction System",
     description:
       "A machine learning-based web app that predicts diabetes risk using optimized clinical data pipelines.",
-    tech: ["Python", "Flask", "scikit-learn", "MongoDB", "HTML", "CSS", "JavaScript", "Gmail SMTP"],
+    tech: ["Python", "Django", "scikit-learn", "MongoDB", "HTML", "CSS", "JavaScript", "Gmail SMTP"],
     github: "https://github.com/Praveen869/type-2-diabetes-prediction-system.git",
     live: "https://type-2-diabetes-prediction-system.onrender.com/",
     image: "/Diabetes.png",
